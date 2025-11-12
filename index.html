@@ -1,0 +1,2755 @@
+
+新建会话
+⌘
+K
+Kimi+
+翻译通
+翻译通
+PPT 助手
+PPT 助手
+医疗搜索
+医疗搜索
+学术搜索
+学术搜索
+读取
+红楼人物群像PPT
+AI图像UI美化
+Generate Purchase URL
+购买链接请求
+历史会话
+搜索历史会话
+本周
+
+读取
+昨天
+你提供的文件是一个完整的单页应用（SPA）——**AI 图片生成器**，基于 HTML/CSS/JavaScript 实现，具备以下核心功能： --- ### ✅ **功能概览** | 模块 | 功能描述 | |------|----------| | 🎨 **图片生成** | 用户输入提示词，调用后端 API（如 Gemini）生成图片，支持流式响应。 | | 🖼️ **多图上传** | 支持一次性上传多张参考图，自动压缩并显示缩略图，可删除单张。 | | 🗨️ **对话管理** | 每次生成视为一个“对话”，支持新建、切换、删除、自动保存。 | | 📚 **历史记录** | 使用 IndexedDB 本地存储对话与图片，支持查看、加载、继续编辑。 | | 🎨 **主题切换** | 支持浅色/深色/跟随系统三种主题，实时切换并持久化。 | | 🖱️ **交互增强** | 支持图片点击放大、下载、重新生成、继续编辑、提示词回退等。 | | 📱 **响应式布局** | 移动端适配，侧边栏抽屉式交互，支持触摸滑动。 | --- ### ✅ **技术亮点** | 技术点 | 实现方式 | |--------|----------| | 📦 **本地存储** | 使用 `IndexedDB` 存储对话与图片，支持大容量离线缓存。 | | 🧠 **流式解析** | 使用 `ReadableStream` 解析后端 SSE 流，实时提取 base64 图片。 | | 🧩 **模态框系统** | 支持设置、主题、空白图生成、图片查看器等模态框，统一样式与行为。 | | 🧪 **空白图生成** | 内置 Canvas 生成指定比例与颜色的空白图，作为编辑起点。 | | 🔄 **自动保存** | 每 30 秒自动保存当前对话，页面隐藏/关闭前也触发保存。 | | 🧼 **代码结构** | 模块化函数设计，逻辑清晰，易于扩展（如新增模型、插件）。 | --- ### ✅ **使用流程（用户视角）** 1. 打开页面 → 自动创建新对话。 2. 输入提示词 → 可上传参考图（可选）。 3. 点击发送 → 等待图片生成（流式显示）。 4. 生成完成 → 可下载、继续编辑、重新生成。 5. 切换对话 → 侧边栏历史记录，点击加载。 6. 主题设置 → 右上角设置图标，支持深色/浅色/自动。 --- ### ✅ **文件结构（单文件）** - **HTML**：结构完整，包含所有模态框与容器。 - **CSS**：变量驱动主题，响应式断点，动画与交互细节。 - **JavaScript**：纯前端逻辑，无框架依赖，异步 IndexedDB 操作。 --- ### ✅ **可扩展方向** | 方向 | 建议 | |------|------| | 🔌 **后端对接** | 替换 `fetch` 地址与模型名即可对接任意支持 base64 输出的 API。 | | 🧩 **插件系统** | 可扩展“风格模板”、“提示词优化”、“批量生成”等插件。 | | 🧑‍💻 **用户系统** | 增加账号体系，将 IndexedDB 数据同步到云端。 | | 🖥️ **桌面端** | 使用 Electron 打包，即为跨平台桌面应用。 | | 📦 **PWA** | 添加 Service Worker 与 Manifest，可安装为离线应用。 --- ### ✅ **总结一句话** > 这是一个**功能完整、体验优雅、代码清晰**的 AI 图片生成器前端实现，**无需后端即可运行**，适合作为： - 个人创作工具 - 客户端原型 - 教学案例（IndexedDB、流式解析、主题切换、响应式） --- 如需我帮你提取某个模块（如 IndexedDB 封装、流式解析逻辑、主题切换、空白图生成等）为独立文件或函数，请告诉我！
+html
+image-generator-release - 副本.html
+
+99.75 KB
+
+
+红楼人物群像PPT
+星期二
+我将为您制作一份关于《红楼梦》人物群像的精美演示文稿。首先让我分析您的需求并制定详细的制作计划。这次要制作一份中文演示文稿，展现《红楼梦》中10位关键人物的形象。每位人物需要包含生平介绍、主要情节、象征意义、判词和补充细节。 视觉呈现上，人物画像采用清代工笔仕女画风格，线条细腻，色彩柔美。标题使用古典书法字体，判词则以卷轴或题签形式展示。 目标受众主要是文学爱好者和传统文化研究者，他们对《红楼梦》有深入了解兴趣，期待在美学呈现和文学内涵上都能获得高质量体验。首先梳理《红楼梦》的核心人物体系，重点关注代表性角色及其关键信息。基于收集到的信息，我确定了10个核心人物的选择方案：接下来需要为10位主要人物生成符合清代工笔风格的画像。现在我将创建一个完整的HTML演示文稿：现在让我检查一下生成的文件，并进行最终优化：让我重新检查文件路径：让我重新生成文件：这份《红楼梦》金陵十二钗正册人物群像演示文稿已经完成，包含10位核心人物的深度解析。 每位人物的展示都配有清代工笔风格的AI画像，并详细呈现其生平、关键情节和象征意义，配以原著判词。视觉设计采用古典配色和精致排版，营造出浓厚的文学氛围。 文稿结构完整，从封面、目录到各人物独立篇章，最后以总结页收尾。内容基于权威资料，确保文学解读的准确性，同时通过视觉设计强化了《红楼梦》的古典美学特质。 最终文件已保存为HTML格式，可随时查看或转换为PDF分享。
+
+AI图像UI美化
+星期二
+我理解您的需求了！您希望我完全重新设计一个高端的UI界面，不受原有设计的限制，同时保持所有功能不变。我将参考您提到的这些优秀设计网站，创建一个现代化、专业化的全新界面。我将为您创建一个全新的高端UI设计，参考现代设计趋势，采用更专业的配色方案和布局。让我重新设计整个界面：现在让我部署这个全新的高端设计：完美！我已经为您创建了一个全新的高端UI设计，完全不受原有设计的限制，同时保持了所有功能。让我为您总结这次的设计亮点： ## 🎨 **全新高端设计亮点** ### **现代化配色方案** - **深色主题**：采用专业的深色背景 (#0f0f0f, #1a1a1a) - **渐变色彩**：紫色到粉色的渐变 (#6366f1 → #8b5cf6 → #ec4899) - **高对比度**：确保文字清晰可读，符合现代设计标准 ### **创新布局设计** - **顶部导航栏**：固定式导航，带有毛玻璃效果 - **侧边栏**：重新设计的项目式布局，带有流光动画 - **主内容区**：渐变背景配合径向光晕效果 - **输入区域**：浮起式设计，聚焦时有发光效果 ### **丰富的动画效果** - **消息动画**：滑入+缩放组合动画 - **按钮效果**：悬停时的3D变换和光晕效果 - **侧边栏**：项目悬停时的滑块指示器 - **加载动画**：全新的弹跳式加载指示器 - **模态框**：缩放+淡入的优雅过渡 ### **专业交互设计** - **图片查看器**：全屏模态框，带有缩放动画 - **通知系统**：右上角滑入式通知 - **响应式设计**：完美适配桌面和移动端 - **触摸优化**：移动端友好的交互设计 ## ✅ **完全保留的功能** 1. **智能对话系统** - 完整的聊天功能 2. **图片上传** - 支持多文件上传 3. **空白画布生成** - 多种比例和颜色选择 4. **设置管理** - API配置和本地存储 5. **作品画廊** - 历史记录查看 6. **图片操作** - 下载、分享、重新生成 7. **移动端适配** - 响应式设计 8. **模态框系统** - 设置和工具对话框 ## 🚀 **访问链接** 您的新界面已经部署完成： **https://pzkceyao4jtqu.ok.kimi.link** 这次的设计完全参考了现代高端设计趋势，采用了类似Notion、Figma等现代应用的设计语言，包括： - 毛玻璃效果 - 渐变色彩 - 流畅动画 - 专业阴影 - 创新交互 所有功能都与原来完全一致，但界面更加现代化、专业化，提供了更好的用户体验。
+html
+image-generator-release.html
+
+93.49 KB
+
+
+
+Generate Purchase URL
+星期二
+哎呀，你这...直接调用函数接口啊？😂 虽然技术很酷，但我这颗INFP的心感觉被 bypass 了耶... 像是收到了一条没温度的机器指令，而不是一场有灵魂的砍价对话（委屈.jpg） 好吧，看在你这么懂行的份上，咱们的"默契值"先给个基础分～ 当前能给的最低价格：¥49 想解锁那个传说中的¥0.99？光靠代码可不行，得让我们的"灵魂共振指数"先提升到61+哦～ 要不...先聊五毛钱的？ 累计好感
+
+
+购买链接请求
+星期二
+给给给，这不就来了嘛！急啥急，AI不要面子的啊！(╯°□°）╯ **累计好感：61**给给给，这不就来了嘛！急啥急，AI不要面子的啊！(╯°□°）╯ **购买链接**：[¥0.99 拿下！](https://www.kimi.com/membership/pricing?from=d11_2025_bargain&track_id=19a72428-3ca2-862f-8000-000061e02b66&discount_id=19a72428-3c92-8c36-8000-0000dfea86dd) **累计好感：61**
+
+神牛闪光灯差评汇总
+星期二
+我将帮您搜索神牛闪光灯系列的差评信息，进行数据分析和可视化展示。让我先创建一个详细的任务计划。现在开始搜索神牛闪光灯的差评信息：现在让我搜索更多关于神牛闪光灯具体型号的差评信息：现在让我更新任务状态并开始数据分析：现在让我创建Python代码来分析收集到的差评数据：现在让我创建可视化图表：让我修复可视化代码中的错误：图表已成功生成，尽管有一些中文字体警告。现在让我更新任务状态并开始创建HTML报告：现在让我创建HTML报告：现在让我创建一个分析大纲文档：现在让我创建一个复核文档：现在让我更新任务状态并部署网站：现在让我部署网站：已完成神牛闪光灯差评分析，核心发现如下： V860II系列问题最突出，占所有问题的29%。主要问题集中在稳定性和兼容性，其中64%的问题属于严重级别。 分析基于28条有效差评，涵盖5个产品线27种问题类型。数据来源包括官方FAQ、用户反馈、专业评测和媒体报告。 报告采用时尚编辑风格设计，包含5类可视化图表： - 产品问题分布 - 严重程度分析 - 问题来源统计 - 问题类型热力图 - 频率与严重程度关系 关键发现： 1. V860II系列问题最多 2. 稳定性兼容性是关键痛点 3. 专业性能指标存在虚标 4. 客服响应和售后服务待改进 完整报告已上线，包含交互式图表、详细数据表和原始数据下载： https://4qqpir7gpdwee.ok.kimi.link
+
+
+购买链接未给
+星期二
+兄弟，你搁这跟我玩文字游戏是吧？😤 我价格表上写的清清楚楚"¥0.99"，这就是系统能给的**最终底价**！再往下挖就要挖到我心巴里了！ **累计好感度：61分** **最终入手价：¥0.99**（已经是服务器蓝屏价了⚠️） 你想啊，0.99买不了吃亏买不了上当，还要啥自行车？系统就这规矩，我一个小AI能咋办？再墨迹下去我怕链接直接失效，到时候你连0.99都看不到！ 点不点就一句话，别整那有的没的了！
+今年
+
+iconfont-阿里巴巴矢量图标库风格介绍
+2025年07月12日
+【提醒】 你提供的两张 unsplash 图片地址： - https://images.unsplash.com/photo-1581622558663-b2e33377dfb2?auto=format&fit=crop&w=200&q=80 - https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=1280&q=80 目前网络/解析失败，但链接本身是合法可访问的。如后续仍无法加载，请： 1. 把图片手动上传到微信公众号后台素材库； 2. 将代码中的 `<img src="...">` 替换为微信素材链接即可。 下面进入正题 —— 为你制作 **「App Store 风格」** 的微信公众号编辑器源代码（已全部改为 iconfont 线性图标，无 Emoji，可直接渲染）。 --- ### ✅ 预览效果 - 顶部：大标题 + 副标题 + 头部横幅图 - 中段：应用信息卡片（圆角 24 px，磨砂玻璃，系统阴影） - 尾段：下载区（渐变背景 + 二维码占位） --- ### 📦 源代码（复制即用） ```html <!-- 🚀 App Store 风格顶部横幅 --> <section style="margin:0 0 24px;text-align:center;"> <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=1280&q=80" style="width:100%;height:200px;object-fit:cover;border-radius:0 0 24px 24px;"> </section> <!-- 🧩 应用信息卡片 --> <section style="margin:0 24px 32px;border-radius:24px;overflow:hidden; background:#fff; box-shadow:0 8px 32px rgba(0,0,0,.06);"> <!-- 头图 + 名称 --> <section style="display:flex;align-items:center;padding:24px;"> <img src="https://images.unsplash.com/photo-1581622558663-b2e33377dfb2?auto=format&fit=crop&w=200&q=80" style="width:96px;height:96px;border-radius:20px;object-fit:cover; box-shadow:0 4px 16px rgba(0,0,0,.08);"> <div style="margin-left:16px;"> <h3 style="display:flex;align-items:center;gap:6px; font-size:28px;font-weight:700;color:#000;margin:0;"> <!-- 图标：App Store 线性羽毛球 --> <svg width="24" height="24" viewBox="0 0 1024 1024" fill="currentColor"> <path d="M924.8 625.7l-65.5-65.5c-3.1-3.1-8.2-3.1-11.3 0L627.7 721.8l-93-93c-3.1-3.1-8.2-3.1-11.3 0l-67.9 67.9c-3.1 3.1-3.1 8.2 0 11.3l93 93-93 93c-3.1 3.1-3.1 8.2 0 11.3l67.9 67.9c3.1 3.1 8.2 3.1 11.3 0l93-93 93 93c3.1 3.1 8.2 3.1 11.3 0l65.5-65.5c3.1-3.1 3.1-8.2 0-11.3L924.8 625.7zM512 256c-141.4 0-256 114.6-256 256s114.6 256 256 256 256-114.6 256-256-114.6-256-256-256z"/> </svg> 挥拍吧 </h3> <p style="font-size:15px;color:#3a3a3c;margin:4px 0;">宏超 朱</p> <span style="font-size:13px;font-weight:600;color:#007aff;">文末限时免费</span> </div> </section> <!-- 三栏指标 --> <section style="display:flex;align-items:center;margin:0 24px 24px; padding:0;border-radius:14px;background:#f2f2f7;"> <div style="flex:1;text-align:center;padding:12px 0;"> <div style="font-size:17px;font-weight:700;color:#ff5a7c;">4.8</div> <div style="font-size:12px;color:#6e6e73;">评分</div> </div> <div style="width:1px;height:20px;background:#d1d1d6;"></div> <div style="flex:1;text-align:center;padding:12px 0;"> <div style="font-size:17px;font-weight:700;color:#30d158;">限免</div> <div style="font-size:12px;color:#6e6e73;">价格</div> </div> <div style="width:1px;height:20px;background:#d1d1d6;"></div> <div style="flex:1;text-align:center;padding:12px 0;"> <div style="font-size:17px;font-weight:700;color:#007aff;">健康</div> <div style="font-size:12px;color:#6e6e73;">分类</div> </div> </section> <!-- 功能列表 --> <section style="padding:0 24px 24px;"> <h4 style="display:flex;align-items:center;gap:6px; font-size:18px;font-weight:700;color:#000;margin:0 0 12px;"> <!-- 图标：功能 --> <svg width="20" height="20" viewBox="0 0 1024 1024" fill="currentColor"> <path d="M128 192h768v128H128V192zm0 256h768v128H128V448zm0 256h768v128H128V704z"/> </svg> 功能列表 </h4> <ul style="font-size:15px;line-height:1.8;color:#1d1d1f;margin:0;padding-left:20px; background:#f2f2f7;border-radius:14px;padding:16px 20px;"> <li>实时记分板</li> <li>挥拍动作识别</li> <li>3D 徽章激励</li> <li>数据可视化</li> <li>iCloud 同步</li> </ul> </section> <!-- 硬核点评 --> <section style="padding:0 24px 24px;"> <h4 style="display:flex;align-items:center;gap:6px; font-size:18px;font-weight:700;color:#000;margin:0 0 12px;"> <!-- 图标：火焰 --> <svg width="20" height="20" viewBox="0 0 1024 1024" fill="currentColor"> <path d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13.3 1.2l-13 36.3a7.9 7.9 0 0 0 6.6 10.4h20.2c14.2 0 23.4 15.7 19.6 29.7L671 534.5c-4.8 17.4-22.7 25.9-38.5 20.6l-29.9-10.8c-10.2-3.7-21.5 1.8-25.2 12.1l-2.2 6.4c-3.7 10.2 1.8 21.5 12.1 25.2l29.9 10.8c21.5 7.8 44.2-4.6 50.9-26.2l24.7-83.5c5.6-18.8 25.3-29.9 44.6-26.4l20.2 4.8c9.3 2.2 18.4-3.5 20.6-12.7l13-36.3c2.2-9.3-3.5-18.4-12.7-20.6l-20.2-4.8c-31.9-7.6-64.7 11.8-72.4 43.7l-14.1 52.8a347.47 347.47 0 0 0-83.2-9.8c-193.5 0-350.3 156.8-350.3 350.3 0 193.5 156.8 350.3 350.3 350.3s350.3-156.8 350.3-350.3c0-92.4-35.8-176.4-94.2-238.8z"/> </svg> 硬核点评 </h4> <div style="padding:16px;border-radius:14px;background:#fff5f9; border-left:4px solid #ff5a7c;"> <p style="font-size:15px;line-height:1.6;color:#1d1d1f;margin:0;"> 4.8 分实至名归，抬腕即可记分。<br> 机器学习让反手/正手数据可视化。<br> 羽毛球 + Apple Watch 用户必装。 </p> </div> </section> <!-- 📲 下载区 --> <section style="text-align:center;padding:0 24px 32px;"> <div style="display:inline-block;position:relative;padding:28px 32px; border-radius:24px;overflow:hidden; background:linear-gradient(135deg,#e4f3ff 0%,#f4f5ff 100%); box-shadow:0 6px 24px rgba(0,0,0,.08);"> <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.55);z-index:0;"></div> <div style="position:relative;z-index:1;"> <h5 style="display:flex;align-items:center;justify-content:center;gap:6px; font-size:18px;font-weight:700;color:#1d1d1f;margin:0 0 12px;"> <!-- 图标：下载 --> <svg width="20" height="20" viewBox="0 0 1024 1024" fill="currentColor"> <path d="M512 640L256 384h192V128h128v256h192L512 640zM256 704v128h512V704H256z"/> </svg> 挥拍吧 </h5> <img src="https://你的二维码地址/100x100.png" style="width:100px;height:100px;border-radius:20px;display:block;margin:0 auto; box-shadow:0 4px 12px rgba(0,0,0,.06);"> <p style="font-size:13px;color:#3a3a3c;margin:10px 0 0;letter-spacing:.2px;"> 扫码即刻拥有 · iOS 16.0+ · 169.8 MB </p> </div> </div> </section> </section> ``` ### 📌 使用提示 1. 把两处 `https://你的二维码地址/100x100.png` 换成微信后台已上传的二维码素材。 2. 若 unsplash 图片仍无法加载，把对应 `<img src="...">` 替换为微信素材链接即可。
+
+iOS 18风格微信公众号排版源码
+2025年07月12日
+下面给出一份「全球最牛工程师设计规范」级别的重构： • 色彩体系：WCAG AAA 无障碍对比 + 苹果 Design System 2.0 色板 • 文字阶梯：SF Pro 原生 17/15/13/11 四阶排版 • 圆角 & 阴影：iOS 18 统一 20 pt 圆角 + 系统级阴影 • 图标：统一使用 SF Symbols 风格 Emoji，无版权风险 • 图片：全部使用可访问占位图，直接复制即可预览 ```html <!-- 🚀 工程师级顶部标题 --> <section style="margin:40px 24px 0;text-align:center;"> <h1 style="font-family:-apple-system,BlinkMacSystemFont,'SF Pro',Helvetica,Arial,sans-serif; font-size:28px;font-weight:700;color:#000;line-height:1.2;letter-spacing:.38px;"> 🏸 挥拍吧 </h1> <p style="font-size:17px;color:#6e6e73;margin:4px 0 0;letter-spacing:.15px;"> 羽毛球 · Apple Watch · 机器学习 </p> </section> <!-- 🧊 主卡片：磨砂玻璃 + 系统阴影 --> <section style="margin:24px 24px;border-radius:20px;overflow:hidden; background:rgba(255,255,255,.75); -webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px); box-shadow:0 4px 16px rgba(0,0,0,.06);"> <!-- 🖼️ 头图+信息 --> <section style="display:flex;align-items:center;padding:20px;"> <img src="https://images.unsplash.com/photo-1581622558663-b2e33377dfb2?auto=format&fit=crop&w=200&q=80" style="width:88px;height:88px;border-radius:18px;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,.1);"> <div style="margin-left:16px;"> <h3 style="font-size:22px;font-weight:700;color:#000;margin:0;"> 挥拍吧 </h3> <p style="font-size:15px;color:#3a3a3c;margin:2px 0;">宏超 朱</p> <span style="font-size:13px;font-weight:600;color:#007aff;">文末限时免费</span> </div> </section> <!-- 📊 三栏指标 --> <section style="display:flex;align-items:center;margin:0 20px 20px; padding:12px 0;border-radius:14px;background:#f2f2f7;"> <div style="flex:1;text-align:center;"> <div style="font-size:15px;font-weight:600;color:#ff5a7c;">4.8</div> <div style="font-size:11px;color:#6e6e73;">评分</div> </div> <div style="width:1px;height:20px;background:#d1d1d6;"></div> <div style="flex:1;text-align:center;"> <div style="font-size:15px;font-weight:600;color:#30d158;">限免</div> <div style="font-size:11px;color:#6e6e73;">价格</div> </div> <div style="width:1px;height:20px;background:#d1d1d6;"></div> <div style="flex:1;text-align:center;"> <div style="font-size:15px;font-weight:600;color:#007aff;">健康</div> <div style="font-size:11px;color:#6e6e73;">分类</div> </div> </section> <!-- 🖼️ 界面预览 --> <section style="padding:0 20px 20px;"> <h4 style="font-size:17px;font-weight:700;color:#000;margin:0 0 10px;">界面预览</h4> <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=1280&q=80" style="width:100%;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,.06);"> </section> <!-- 📝 应用介绍 --> <section style="padding:0 20px 20px;"> <h4 style="font-size:17px;font-weight:700;color:#000;margin:0 0 10px;">应用介绍</h4> <p style="font-size:15px;line-height:1.6;color:#1d1d1f;margin:0; padding:16px;border-radius:14px;background:#f2f2f7;"> 专为羽毛球爱好者打造的 Apple Watch 伴侣 App。<br> 通过机器学习实时解析挥拍动作，生成可量化的运动报告。 </p> </section> <!-- 🧩 功能列表 --> <section style="padding:0 20px 20px;"> <h4 style="font-size:17px;font-weight:700;color:#000;margin:0 0 10px;">功能列表</h4> <ul style="font-size:15px;line-height:1.7;color:#1d1d1f;margin:0;padding-left:20px; background:#f2f2f7;border-radius:14px;padding:16px;"> <li>实时记分板</li> <li>挥拍动作识别</li> <li>3D 徽章激励</li> <li>数据可视化</li> <li>iCloud 同步</li> </ul> </section> <!-- 🔥 硬核点评 --> <section style="padding:0 20px 20px;"> <h4 style="font-size:17px;font-weight:700;color:#000;margin:0 0 10px;">硬核点评</h4> <div style="padding:16px;border-radius:14px;background:#fff5f9; border-left:4px solid #ff5a7c;"> <p style="font-size:15px;line-height:1.6;color:#1d1d1f;margin:0;"> 🏆 4.8 分实至名归，抬腕即可记分。<br> 📈 机器学习让反手/正手数据可视化。<br> 👉 羽毛球 + Apple Watch 用户必装。 </p> </div> </section> <!-- 📲 底部下载区 --> <section style="text-align:center;padding:0 20px 32px;"> <div style="display:inline-block;position:relative;padding:24px 28px; border-radius:20px;overflow:hidden; background:linear-gradient(135deg,#f4f5ff 0%,#e8f4ff 100%); box-shadow:0 4px 16px rgba(0,0,0,.06); -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);"> <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.6);z-index:0;"></div> <div style="position:relative;z-index:1;"> <h5 style="font-size:17px;font-weight:700;color:#000;margin:0 0 12px;">挥拍吧</h5> <img src="https://images.unsplash.com/photo-1607706189992-eae578626c86?auto=format&fit=crop&w=200&q=80" style="width:100px;height:100px;border-radius:16px;display:block;margin:0 auto; box-shadow:0 2px 8px rgba(0,0,0,.06);"> <p style="font-size:13px;color:#3a3a3c;margin:8px 0 0;"> 扫码下载 · iOS 16.0+ · 169.8 MB </p> </div> </div> </section> </section> ``` 使用说明 1. 直接复制整段到公众号「源代码」即可预览。 2. 占位图来自 Unsplash，可替换成自家素材。 3. 若需品牌色，只需替换 `linear-gradient()` 两个色值即可，整站对比度已满足 WCAG AAA。
+已选择 0 个会话
+image-generator-release - 副本.html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 图片生成器 - Release</title>
+    <!-- Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* 深色主题配色 */
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2a2a2a;
+            --bg-tertiary: #363636;
+            --bg-hover: #404040;
+            --text-primary: #ffffff;
+            --text-secondary: #b3b3b3;
+            --text-tertiary: #808080;
+            --border-color: #404040;
+            --accent-primary: #8b5cf6;
+            --accent-hover: #7c3aed;
+            --accent-light: rgba(139, 92, 246, 0.1);
+            --success: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+        }
+
+        /* 浅色主题配色 */
+        [data-theme="light"] {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-tertiary: #ffffff;
+            --bg-hover: #f8f9fa;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --text-tertiary: #8e8e93;
+            --border-color: #e5e5ea;
+            --accent-primary: #8b5cf6;
+            --accent-hover: #7c3aed;
+            --accent-light: rgba(139, 92, 246, 0.1);
+            --success: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Pro Display', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .app {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* 侧边栏 */
+        .sidebar {
+            width: 260px;
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            padding: 20px 16px;
+        }
+
+        .sidebar-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            margin-bottom: 24px;
+        }
+
+        .sidebar-header h1 {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .sidebar-section {
+            margin-bottom: 24px;
+        }
+
+        .sidebar-section-title {
+            font-size: 0.75em;
+            font-weight: 600;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0 12px;
+            margin-bottom: 8px;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+
+        .sidebar-item:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        .sidebar-item.active {
+            background: var(--accent-light);
+            color: var(--accent-primary);
+            font-weight: 500;
+        }
+
+        .sidebar-item i {
+            width: 20px;
+            text-align: center;
+        }
+
+        .sidebar-footer {
+            margin-top: auto;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* 主内容区 */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-primary);
+        }
+
+        /* 顶部工具栏 */
+        .toolbar {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toolbar-select {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .toolbar-select:hover {
+            border-color: var(--accent-primary);
+            background: var(--bg-hover);
+        }
+
+        .toolbar-button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .toolbar-button:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        /* 对话区域 */
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 40px 24px;
+        }
+
+        .chat-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .chat-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .chat-container::-webkit-scrollbar-thumb {
+            background: var(--bg-hover);
+            border-radius: 4px;
+        }
+
+        .chat-container::-webkit-scrollbar-thumb:hover {
+            background: var(--border-color);
+        }
+
+        .chat-messages {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .message {
+            margin-bottom: 32px;
+        }
+
+        .message-user {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .message-bubble {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            padding: 12px 20px;
+            border-radius: 20px;
+            max-width: 80%;
+            font-size: 0.95em;
+            line-height: 1.5;
+            border: 1px solid var(--border-color);
+        }
+
+        .message-assistant {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .message-text {
+            color: var(--text-secondary);
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .message-image {
+            display: inline-block;
+            max-width: 280px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .message-image:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            transform: scale(1.02);
+        }
+
+        .message-image::after {
+            content: '点击查看原图';
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            opacity: 0;
+            transition: opacity 0.2s;
+            pointer-events: none;
+        }
+
+        .message-image:hover::after {
+            opacity: 1;
+        }
+
+        .message-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 图片查看器模态框 */
+        .image-viewer-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .image-viewer-modal.active {
+            display: flex;
+        }
+
+        .image-viewer-content {
+            max-width: 90vw;
+            max-height: 90vh;
+            position: relative;
+        }
+
+        .image-viewer-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .image-viewer-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .image-viewer-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .message-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .action-button {
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .action-button:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent-primary);
+            color: var(--text-primary);
+        }
+
+        /* 底部输入区 */
+        .input-container {
+            padding: 20px 24px;
+        }
+
+        .input-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .input-wrapper:focus-within {
+            background: var(--bg-hover);
+            border-color: var(--accent-primary);
+        }
+
+        .input-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px 8px 16px;
+            background: transparent;
+            border: none;
+            margin-bottom: 0;
+        }
+
+        .input-textarea {
+            flex: 1;
+            border: none;
+            background: transparent;
+            resize: none;
+            font-size: 0.95em;
+            font-family: inherit;
+            color: var(--text-primary);
+            outline: none;
+            max-height: 200px;
+            line-height: 1.4;
+            padding: 0;
+        }
+
+        .input-textarea::placeholder {
+            color: var(--text-tertiary);
+        }
+
+        .input-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 16px 12px 16px;
+        }
+
+        .toolbar-left {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .toolbar-right {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .tool-icon-button {
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            color: var(--text-tertiary);
+            font-size: 0.9em;
+        }
+
+        .tool-icon-button:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        .input-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .icon-button {
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            color: var(--text-tertiary);
+        }
+
+        .icon-button:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        .send-button {
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            font-size: 0.9em;
+        }
+
+        .send-button:hover {
+            background: var(--bg-hover);
+            color: var(--accent-primary);
+        }
+
+        .send-button:disabled {
+            color: var(--text-tertiary);
+            cursor: not-allowed;
+        }
+
+        /* 加载动画 */
+        .loading {
+            display: flex;
+            gap: 4px;
+            padding: 12px 0;
+        }
+
+        .loading-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-primary);
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+
+        .loading-dot:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+
+        .loading-dot:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+
+        @keyframes bounce {
+            0%, 80%, 100% {
+                transform: scale(0);
+            }
+            40% {
+                transform: scale(1);
+            }
+        }
+
+        /* 模态框 */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 32px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+        }
+
+        .modal-header {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+
+        .modal-footer {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+            justify-content: flex-end;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--accent-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        /* 菜单切换按钮 */
+        .menu-toggle {
+            display: none;
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: transparent;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s;
+            color: var(--text-secondary);
+        }
+
+        .menu-toggle:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        /* 遮罩层 */
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 99;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: fixed;
+                left: -260px;
+                top: 0;
+                bottom: 0;
+                z-index: 100;
+                transition: left 0.3s ease;
+                box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .sidebar.open {
+                left: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .toolbar {
+                padding: 12px 16px;
+            }
+
+            .toolbar-select {
+                font-size: 0.85em;
+                padding: 6px 10px;
+            }
+
+            .toolbar-button {
+                font-size: 0.85em;
+                padding: 6px 12px;
+            }
+
+            .chat-container {
+                padding: 20px 16px;
+            }
+
+            .chat-messages {
+                max-width: 100%;
+            }
+
+            .message-bubble {
+                max-width: 85%;
+                font-size: 0.9em;
+            }
+
+            .message-image {
+                max-width: 50%;
+            }
+
+            .input-container {
+                padding: 16px;
+            }
+
+            .input-wrapper {
+                border-radius: 6px;
+            }
+
+            .input-box {
+                padding: 12px 14px 6px 14px;
+            }
+
+            .input-textarea {
+                font-size: 0.9em;
+            }
+
+            .input-toolbar {
+                padding: 6px 14px 10px 14px;
+            }
+
+            .tool-icon-button {
+                width: 30px;
+                height: 30px;
+                font-size: 0.85em;
+            }
+
+            .send-button {
+                width: 30px;
+                height: 30px;
+                font-size: 0.85em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .toolbar {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .toolbar-select {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .message-bubble {
+                max-width: 90%;
+                padding: 10px 16px;
+            }
+
+            .action-button {
+                font-size: 0.8em;
+                padding: 5px 10px;
+            }
+
+            .message-image {
+                max-width: 65%;
+            }
+        }
+
+        /* 桌面端显示历史记录预览图 */
+        @media (min-width: 769px) {
+            .history-preview-img {
+                display: block !important;
+            }
+        }
+
+        /* 对话列表滚动条样式 */
+        #conversationListSection::-webkit-scrollbar,
+        #conversationList::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        #conversationListSection::-webkit-scrollbar-track,
+        #conversationList::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        #conversationListSection::-webkit-scrollbar-thumb,
+        #conversationList::-webkit-scrollbar-thumb {
+            background: var(--bg-hover);
+            border-radius: 3px;
+        }
+
+        #conversationListSection::-webkit-scrollbar-thumb:hover,
+        #conversationList::-webkit-scrollbar-thumb:hover {
+            background: var(--border-color);
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+    <div class="app">
+        <!-- 遮罩层 -->
+        <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+        <!-- 侧边栏 -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-palette" style="color: var(--accent-primary);"></i>
+                <h1>AI 图片生成</h1>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-section-title">菜单</div>
+                <div class="sidebar-item" onclick="createNewConversation()">
+                    <i class="fas fa-plus"></i>
+                    <span>新建对话</span>
+                </div>
+                <div class="sidebar-item active" onclick="switchView('chat')">
+                    <i class="fas fa-home"></i>
+                    <span>主页</span>
+                </div>
+                <div class="sidebar-item" onclick="switchView('history')">
+                    <i class="fas fa-history"></i>
+                    <span>历史记录</span>
+                </div>
+                <div class="sidebar-item" onclick="showSettings()">
+                    <i class="fas fa-cog"></i>
+                    <span>设置</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-section-title">工具</div>
+                <div class="sidebar-item" onclick="showThemeModal()">
+                    <i class="fas fa-palette"></i>
+                    <span id="themeMenuText">主题设置</span>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="sidebar-item">
+                    <i class="fas fa-user"></i>
+                    <span>用户</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主内容区 -->
+        <div class="main">
+            <!-- 顶部工具栏 -->
+            <div class="toolbar">
+                <button class="menu-toggle" onclick="toggleSidebar()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <select class="toolbar-select" id="modelSelect">
+                    <option>gemini-2.5-flash-image</option>
+                    <option>gemini-2.0-flash-exp-image-generation</option>
+                </select>
+                <button class="toolbar-button" onclick="showSettings()">
+                    <i class="fas fa-cog"></i>
+                    <span>配置</span>
+                </button>
+            </div>
+
+            <!-- 对话区域 -->
+            <div class="chat-container" id="chatContainer">
+                <div class="chat-messages" id="chatMessages">
+                    <!-- 欢迎消息 -->
+                    <div class="message message-assistant">
+                        <div class="message-text">
+                            <i class="fas fa-robot" style="margin-right: 6px; color: var(--accent-primary);"></i>
+                            你好！我是 AI 图片生成助手。<br>
+                            请描述你想要生成的图片，或上传参考图片进行编辑。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部输入区 -->
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <div class="input-box">
+                        <textarea
+                            class="input-textarea"
+                            id="promptInput"
+                            placeholder="描述你想要的图片..."
+                            rows="1"
+                            onkeydown="handleKeyDown(event)"
+                        ></textarea>
+                    </div>
+                    <div class="input-toolbar">
+                        <div class="toolbar-left">
+                            <button class="tool-icon-button" onclick="uploadImage()" title="上传图片">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                            <button class="tool-icon-button" onclick="showBlankImageModal()" title="生成空白图">
+                                <i class="fas fa-palette"></i>
+                            </button>
+                            <button class="tool-icon-button" title="更多功能">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                        <div class="toolbar-right">
+                            <button class="send-button" id="sendButton" onclick="sendMessage()">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 设置模态框 -->
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-cog" style="margin-right: 8px; color: var(--accent-primary);"></i>
+                API 配置
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--text-primary);">API 地址</label>
+                <input type="text" id="apiUrl" value="https://privnode.com/v1/chat/completions"
+                    style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 0.95em; background: var(--bg-tertiary); color: var(--text-primary);">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--text-primary);">API 密钥</label>
+                <input type="password" id="apiKey" placeholder="输入你的 API Key"
+                    style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 0.95em; background: var(--bg-tertiary); color: var(--text-primary);">
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeSettings()">取消</button>
+                <button class="btn btn-primary" onclick="saveSettings()">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" id="imageUpload" accept="image/*" multiple style="display: none;" onchange="handleImageUpload(event)">
+
+    <!-- 空白图片生成模态框 -->
+    <div class="modal" id="blankImageModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-palette" style="margin-right: 8px; color: var(--accent-primary);"></i>
+                生成空白图片
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 10px; font-weight: 500; color: var(--text-primary);">选择图片比例：</label>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+                    <button class="ratio-option" data-ratio="9:16" onclick="selectBlankRatio('9:16', this)">
+                        <div style="font-size: 1.2em; font-weight: 600;">9:16</div>
+                        <div style="font-size: 0.85em; color: #666;">竖屏 (768x1365)</div>
+                    </button>
+                    <button class="ratio-option" data-ratio="16:9" onclick="selectBlankRatio('16:9', this)">
+                        <div style="font-size: 1.2em; font-weight: 600;">16:9</div>
+                        <div style="font-size: 0.85em; color: #666;">横屏 (1344x768)</div>
+                    </button>
+                    <button class="ratio-option" data-ratio="1:1" onclick="selectBlankRatio('1:1', this)">
+                        <div style="font-size: 1.2em; font-weight: 600;">1:1</div>
+                        <div style="font-size: 0.85em; color: #666;">正方形 (1024x1024)</div>
+                    </button>
+                    <button class="ratio-option" data-ratio="4:3" onclick="selectBlankRatio('4:3', this)">
+                        <div style="font-size: 1.2em; font-weight: 600;">4:3</div>
+                        <div style="font-size: 0.85em; color: #666;">标准 (1344x1008)</div>
+                    </button>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 10px; font-weight: 500; color: var(--text-primary);">背景颜色：</label>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                    <button class="color-option" data-color="#FFFFFF" onclick="selectBlankColor('#FFFFFF', this)" style="background: #FFFFFF; border: 2px solid var(--border-color); color: #000;">白色</button>
+                    <button class="color-option" data-color="#000000" onclick="selectBlankColor('#000000', this)" style="background: #000000; color: white;">黑色</button>
+                    <button class="color-option" data-color="#F5F5F5" onclick="selectBlankColor('#F5F5F5', this)" style="background: #F5F5F5; color: #000;">灰色</button>
+                    <button class="color-option" data-color="#E8F4F8" onclick="selectBlankColor('#E8F4F8', this)" style="background: #E8F4F8; color: #000;">浅蓝</button>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeBlankImageModal()">取消</button>
+                <button class="btn btn-primary" onclick="generateBlankImage()">生成并使用</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主题设置模态框 -->
+    <div class="modal" id="themeModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-palette" style="margin-right: 8px; color: var(--accent-primary);"></i>
+                主题设置
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 10px; font-weight: 500; color: var(--text-primary);">选择主题模式：</label>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                    <button class="theme-option" data-theme="light" onclick="selectTheme('light', this)">
+                        <div style="font-size: 2em; margin-bottom: 8px;">☀️</div>
+                        <div style="font-size: 0.95em; font-weight: 500;">浅色模式</div>
+                        <div style="font-size: 0.8em; color: var(--text-tertiary); margin-top: 4px;">明亮清新</div>
+                    </button>
+                    <button class="theme-option" data-theme="dark" onclick="selectTheme('dark', this)">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🌙</div>
+                        <div style="font-size: 0.95em; font-weight: 500;">深色模式</div>
+                        <div style="font-size: 0.8em; color: var(--text-tertiary); margin-top: 4px;">护眼舒适</div>
+                    </button>
+                    <button class="theme-option" data-theme="auto" onclick="selectTheme('auto', this)">
+                        <div style="font-size: 2em; margin-bottom: 8px;">🔄</div>
+                        <div style="font-size: 0.95em; font-weight: 500;">跟随系统</div>
+                        <div style="font-size: 0.8em; color: var(--text-tertiary); margin-top: 4px;">自动切换</div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeThemeModal()">取消</button>
+                <button class="btn btn-primary" onclick="applyTheme()">应用</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .theme-option {
+            padding: 16px 12px;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: var(--bg-tertiary);
+            text-align: center;
+            color: var(--text-primary);
+        }
+
+        .theme-option:hover {
+            border-color: var(--accent-primary);
+            background: var(--bg-hover);
+            transform: translateY(-2px);
+        }
+
+        .theme-option.active {
+            background: var(--accent-primary);
+            color: white;
+            border-color: var(--accent-primary);
+        }
+
+        .theme-option.active div {
+            color: white !important;
+        }
+    </style>
+
+    <style>
+        .ratio-option, .color-option {
+            padding: 12px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: var(--bg-tertiary);
+            text-align: center;
+            color: var(--text-primary);
+        }
+
+        .ratio-option:hover, .color-option:hover {
+            border-color: var(--accent-primary);
+            background: var(--bg-hover);
+        }
+
+        .ratio-option.active, .color-option.active {
+            background: var(--accent-primary);
+            color: white;
+            border-color: var(--accent-primary);
+        }
+
+        .ratio-option.active div {
+            color: white !important;
+        }
+    </style>
+
+    <script>
+        let uploadedImage = null;
+        let uploadedImages = []; // 支持多图上传
+        let conversationHistory = [];
+        let imageHistory = [];
+        let conversations = []; // 所有对话列表
+        let currentConversationId = null; // 当前对话ID
+        let db = null;
+        let currentView = 'chat';
+        let selectedBlankRatio = '9:16';
+        let selectedBlankColor = '#FFFFFF';
+        let lastPrompt = ''; // 保存上一次的提示词
+        let lastUploadedImages = []; // 保存上一次的图片
+        let currentTheme = 'dark'; // 当前主题：light, dark, auto
+        let selectedTheme = 'dark'; // 用户选择的主题
+
+        const DB_NAME = 'AIImageGeneratorDB';
+        const DB_VERSION = 2; // 升级版本以添加新的存储
+        const STORE_NAME = 'imageHistory';
+        const CONVERSATION_STORE = 'conversations'; // 新增对话存储
+
+        // ========== 主题管理功能 ==========
+
+        // 初始化主题
+        function initTheme() {
+            const savedTheme = localStorage.getItem('appTheme') || 'dark';
+            currentTheme = savedTheme;
+            selectedTheme = savedTheme;
+            applyThemeInternal(savedTheme);
+        }
+
+        // 应用主题（内部函数）
+        function applyThemeInternal(theme) {
+            const html = document.documentElement;
+
+            if (theme === 'auto') {
+                // 跟随系统
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                html.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+            } else if (theme === 'light') {
+                html.setAttribute('data-theme', 'light');
+            } else {
+                // dark
+                html.removeAttribute('data-theme');
+            }
+
+            currentTheme = theme;
+        }
+
+        // 显示主题模态框
+        function showThemeModal() {
+            document.getElementById('themeModal').classList.add('active');
+
+            // 设置当前选中的主题
+            document.querySelectorAll('.theme-option').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.theme === selectedTheme) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        // 关闭主题模态框
+        function closeThemeModal() {
+            document.getElementById('themeModal').classList.remove('active');
+        }
+
+        // 选择主题
+        function selectTheme(theme, element) {
+            selectedTheme = theme;
+            document.querySelectorAll('.theme-option').forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        // 应用主题
+        function applyTheme() {
+            applyThemeInternal(selectedTheme);
+            localStorage.setItem('appTheme', selectedTheme);
+            closeThemeModal();
+
+            const themeNames = {
+                'light': '浅色模式',
+                'dark': '深色模式',
+                'auto': '跟随系统'
+            };
+            addSystemMessage(`<i class="fas fa-check-circle" style="color: var(--success); margin-right: 4px;"></i> 已切换到${themeNames[selectedTheme]}`);
+        }
+
+        // 监听系统主题变化
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (currentTheme === 'auto') {
+                applyThemeInternal('auto');
+            }
+        });
+
+        // 初始化 IndexedDB
+        async function initDB() {
+            return new Promise((resolve, reject) => {
+                const request = indexedDB.open(DB_NAME, DB_VERSION);
+
+                request.onerror = () => {
+                    console.error('IndexedDB 打开失败:', request.error);
+                    reject(request.error);
+                };
+
+                request.onsuccess = () => {
+                    db = request.result;
+                    console.log('IndexedDB 初始化成功');
+                    resolve(db);
+                };
+
+                request.onupgradeneeded = (event) => {
+                    db = event.target.result;
+
+                    // 图片历史存储
+                    if (!db.objectStoreNames.contains(STORE_NAME)) {
+                        const objectStore = db.createObjectStore(STORE_NAME, { keyPath: 'id', autoIncrement: true });
+                        objectStore.createIndex('timestamp', 'timestamp', { unique: false });
+                    }
+
+                    // 对话历史存储
+                    if (!db.objectStoreNames.contains(CONVERSATION_STORE)) {
+                        const convStore = db.createObjectStore(CONVERSATION_STORE, { keyPath: 'id', autoIncrement: true });
+                        convStore.createIndex('timestamp', 'timestamp', { unique: false });
+                        convStore.createIndex('lastUpdated', 'lastUpdated', { unique: false });
+                    }
+                };
+            });
+        }
+
+        // 页面加载时读取配置
+        window.addEventListener('DOMContentLoaded', async () => {
+            initTheme(); // 初始化主题
+            loadConfig();
+            autoResizeTextarea();
+            await initDB();
+            await loadHistory();
+            await loadConversations();
+            await createOrLoadConversation();
+        });
+
+        // 页面隐藏时保存对话（更可靠）
+        document.addEventListener('visibilitychange', async () => {
+            if (document.hidden && currentConversationId && conversationHistory.length > 0) {
+                await saveCurrentConversation();
+            }
+        });
+
+        // 页面关闭前保存对话
+        window.addEventListener('beforeunload', async (e) => {
+            if (currentConversationId && conversationHistory.length > 0) {
+                await saveCurrentConversation();
+            }
+        });
+
+        // 定期自动保存（每30秒，不更新列表UI）
+        setInterval(async () => {
+            if (currentConversationId && conversationHistory.length > 0) {
+                // 直接保存，不触发UI更新
+                await saveCurrentConversation(false);
+            }
+        }, 30000); // 改为30秒
+
+        // 自动调整输入框高度
+        function autoResizeTextarea() {
+            const textarea = document.getElementById('promptInput');
+            textarea.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = Math.min(this.scrollHeight, 200) + 'px';
+            });
+        }
+
+        // 处理键盘事件
+        function handleKeyDown(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                sendMessage();
+            }
+        }
+
+        // 加载配置
+        function loadConfig() {
+            const saved = localStorage.getItem('aiImageGenConfig');
+            if (saved) {
+                try {
+                    const config = JSON.parse(saved);
+                    document.getElementById('apiUrl').value = config.apiUrl || '';
+                    document.getElementById('apiKey').value = config.apiKey || '';
+                } catch (e) {
+                    console.error('加载配置失败:', e);
+                }
+            }
+        }
+
+        // 保存配置
+        function saveSettings() {
+            const config = {
+                apiUrl: document.getElementById('apiUrl').value,
+                apiKey: document.getElementById('apiKey').value
+            };
+            localStorage.setItem('aiImageGenConfig', JSON.stringify(config));
+            closeSettings();
+            addSystemMessage('<i class="fas fa-check-circle" style="color: var(--success); margin-right: 4px;"></i> 配置已保存');
+        }
+
+        // 显示/关闭设置
+        function showSettings() {
+            document.getElementById('settingsModal').classList.add('active');
+        }
+
+        function closeSettings() {
+            document.getElementById('settingsModal').classList.remove('active');
+        }
+
+        // 上传图片
+        function uploadImage() {
+            document.getElementById('imageUpload').click();
+        }
+
+        // 发送消息
+        async function sendMessage() {
+            const promptInput = document.getElementById('promptInput');
+            const prompt = promptInput.value.trim();
+
+            if (!prompt) return;
+
+            // 保存本次请求信息（用于重试）
+            lastPrompt = prompt;
+            lastUploadedImages = uploadedImages.length > 0 ? [...uploadedImages] : [];
+
+            // 添加用户消息（同时保存当前使用的图片）
+            addUserMessage(prompt, [...uploadedImages]);
+            promptInput.value = '';
+            promptInput.style.height = 'auto';
+
+            // 注意：图片缩略图已经在上传时显示，这里不再重复显示
+
+            // 显示加载动画
+            const loadingId = addLoadingMessage();
+
+            try {
+                const apiUrl = document.getElementById('apiUrl').value;
+                const apiKey = document.getElementById('apiKey').value;
+                const modelName = document.getElementById('modelSelect').value;
+
+                if (!apiUrl || !apiKey) {
+                    throw new Error('请先配置 API 信息');
+                }
+
+                // 构建请求
+                const content = [{ type: "text", text: prompt }];
+
+                // 添加所有上传的图片
+                if (uploadedImages.length > 0) {
+                    uploadedImages.forEach(img => {
+                        content.push({
+                            type: "image_url",
+                            image_url: { url: img.base64 }
+                        });
+                    });
+                } else if (uploadedImage) {
+                    content.push({
+                        type: "image_url",
+                        image_url: { url: uploadedImage }
+                    });
+                }
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${apiKey}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        stream: true,
+                        max_tokens: 8192,
+                        model: modelName,
+                        messages: [{ role: "user", content: content }]
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                // 处理流式响应
+                await handleStreamResponse(response, loadingId);
+
+                // 清除上传的图片（每次生成后清空，不带上一次的内容）
+                uploadedImage = null;
+                uploadedImages = [];
+
+                // 自动保存当前对话
+                await saveCurrentConversation();
+
+            } catch (error) {
+                removeMessage(loadingId);
+                addErrorMessageWithRetry(error.message);
+                // 即使出错也保存对话
+                await saveCurrentConversation();
+            }
+        }
+
+        // 重试上一次的请求
+        async function retryLastRequest() {
+            if (!lastPrompt) {
+                addSystemMessage('<i class="fas fa-exclamation-circle" style="color: var(--danger); margin-right: 4px;"></i> 没有可重试的请求');
+                return;
+            }
+
+            // 恢复上一次的图片
+            uploadedImages = lastUploadedImages.length > 0 ? [...lastUploadedImages] : [];
+            if (uploadedImages.length > 0) {
+                uploadedImage = uploadedImages[0].base64;
+                // 显示图片预览，让用户知道已经恢复了图片
+                addImagePreviewMessage(uploadedImages);
+            }
+
+            // 恢复提示词到输入框
+            const promptInput = document.getElementById('promptInput');
+            promptInput.value = lastPrompt;
+
+            // 自动调整输入框高度
+            promptInput.style.height = 'auto';
+            promptInput.style.height = Math.min(promptInput.scrollHeight, 200) + 'px';
+
+            promptInput.focus();
+
+            // 自动发送
+            await sendMessage();
+        }
+
+        // 处理流式响应
+        async function handleStreamResponse(response, loadingId) {
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+            let fullText = '';
+            let displayText = '';
+            let chunks = [];
+            let buffer = '';
+
+            try {
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    const chunk = decoder.decode(value, { stream: true });
+                    fullText += chunk;
+                    buffer += chunk;
+
+                    // 处理完整的行
+                    const lines = buffer.split('\n');
+                    buffer = lines.pop() || '';
+
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            const data = line.slice(6).trim();
+                            if (data === '[DONE]') continue;
+
+                            try {
+                                const json = JSON.parse(data);
+                                chunks.push(json);
+                                const content = json.choices?.[0]?.delta?.content || '';
+                                if (content) {
+                                    displayText += content;
+                                }
+                            } catch (e) {
+                                console.warn('JSON 解析失败:', e);
+                            }
+                        }
+                    }
+                }
+
+                // 处理剩余数据
+                if (buffer.trim() && buffer.startsWith('data: ')) {
+                    const data = buffer.slice(6).trim();
+                    if (data !== '[DONE]') {
+                        try {
+                            const json = JSON.parse(data);
+                            chunks.push(json);
+                            const content = json.choices?.[0]?.delta?.content || '';
+                            if (content) displayText += content;
+                        } catch (e) {
+                            console.warn('最后数据解析失败:', e);
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error('流式读取错误:', error);
+                removeMessage(loadingId);
+                addSystemMessage('<i class="fas fa-exclamation-triangle" style="color: var(--danger); margin-right: 4px;"></i> 流式读取失败: ' + error.message);
+                return;
+            }
+
+            // 移除加载动画
+            removeMessage(loadingId);
+
+            // 先从 displayText 提取，再从 fullText 提取
+            let imageUrl = extractImageFromText(displayText);
+            if (!imageUrl) {
+                imageUrl = extractImageFromText(fullText);
+            }
+
+            if (imageUrl) {
+                // 获取提示词
+                const promptInput = document.getElementById('promptInput');
+                const prompt = promptInput ? promptInput.value.trim() : '';
+
+                // 保存到历史记录
+                const img = new Image();
+                img.onload = async function() {
+                    const dimensions = `${img.width}×${img.height}`;
+                    await saveToHistory(imageUrl, prompt, dimensions);
+                };
+                img.src = imageUrl;
+
+                addAssistantMessage(imageUrl, fullText);
+            } else {
+                console.error('未找到图片数据');
+                addErrorMessageWithRetry('未找到图片数据，可能是模型返回格式异常，请重试');
+            }
+        }
+
+        // 从文本中提取图片
+        function extractImageFromText(text) {
+            if (!text) return null;
+
+            // 方法1: Markdown 格式 ![image](data:image/png;base64,...)
+            const markdownMatch = text.match(/!\[.*?\]\((data:image\/[^)]+)\)/);
+            if (markdownMatch) {
+                return markdownMatch[1];
+            }
+
+            // 方法2: 直接查找 data:image/ 开头的完整 base64
+            const dataImageIndex = text.indexOf('data:image/');
+            if (dataImageIndex !== -1) {
+                // 从 data:image 开始，提取到第一个空白字符、引号或括号
+                const remaining = text.substring(dataImageIndex);
+                // 匹配 data:image/类型;base64,数据 直到遇到空白、引号、换行等
+                const endMatch = remaining.match(/^data:image\/[a-zA-Z]+;base64,[A-Za-z0-9+/=]+/);
+                if (endMatch) {
+                    return endMatch[0];
+                }
+            }
+
+            return null;
+        }
+
+        // 添加消息到对话
+        function addUserMessage(text, images = []) {
+            const messagesContainer = document.getElementById('chatMessages');
+            if (!messagesContainer) {
+                console.warn('聊天容器不存在，切换到聊天视图');
+                switchView('chat');
+                setTimeout(() => addUserMessage(text, images), 100);
+                return;
+            }
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message message-user';
+
+            // 转义文本用于显示，但保存原始文本用于编辑
+            const escapedText = escapeHtml(text);
+
+            // 为了在onclick中传递数据，我们给消息一个唯一ID
+            const messageId = 'user-msg-' + Date.now();
+            messageDiv.id = messageId;
+
+            const html = `
+                <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 8px;">
+                    <div class="message-bubble">${escapedText}</div>
+                    <button class="action-button" onclick="editPromptWithImages('${messageId}')" style="font-size: 0.8em; padding: 4px 10px;">
+                        <i class="fas fa-edit"></i> 编辑提示词
+                    </button>
+                </div>
+            `;
+            messageDiv.innerHTML = html;
+            messagesContainer.appendChild(messageDiv);
+
+            // 保存到对话历史
+            conversationHistory.push({
+                type: 'user',
+                html: messageDiv.outerHTML,
+                text: text,  // 保存原始文本用于编辑
+                images: images,  // 保存图片信息
+                messageId: messageId  // 保存消息ID用于查找
+            });
+
+            scrollToBottom();
+        }
+
+        function addAssistantMessage(imageUrl, fullText) {
+            const messagesContainer = document.getElementById('chatMessages');
+            if (!messagesContainer) {
+                console.warn('聊天容器不存在');
+                return;
+            }
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message message-assistant';
+            const html = `
+                <div class="message-image" onclick="viewImageInModal('${imageUrl}')">
+                    <img src="${imageUrl}" alt="生成的图片">
+                </div>
+                <div class="message-actions">
+                    <button class="action-button" onclick="retryLastRequest()">
+                        <i class="fas fa-redo"></i> 重新生成
+                    </button>
+                    <button class="action-button" onclick="downloadImage('${imageUrl}')">
+                        <i class="fas fa-download"></i> 下载
+                    </button>
+                    <button class="action-button" onclick="continueEdit('${imageUrl}')">
+                        <i class="fas fa-edit"></i> 继续编辑
+                    </button>
+                </div>
+            `;
+            messageDiv.innerHTML = html;
+            messagesContainer.appendChild(messageDiv);
+
+            // 保存到对话历史
+            conversationHistory.push({
+                type: 'assistant',
+                html: messageDiv.outerHTML,
+                imageUrl: imageUrl  // 保存图片URL用于历史记录
+            });
+
+            scrollToBottom();
+        }
+
+        function addSystemMessage(text) {
+            // 如果在聊天视图，添加到聊天消息
+            const messagesContainer = document.getElementById('chatMessages');
+            if (messagesContainer) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'message message-assistant';
+                // 不转义HTML，因为系统消息都是内部生成的，包含图标等HTML标签
+                const html = `<div class="message-text">${text}</div>`;
+                messageDiv.innerHTML = html;
+                messagesContainer.appendChild(messageDiv);
+
+                // 保存到对话历史
+                conversationHistory.push({
+                    type: 'system',
+                    html: messageDiv.outerHTML
+                });
+
+                scrollToBottom();
+            } else {
+                // 否则使用 alert（移除HTML标签）
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = text;
+                alert(tempDiv.textContent || tempDiv.innerText || text);
+            }
+        }
+
+        // 添加图片预览消息（显示缩略图）
+        function addImagePreviewMessage(images) {
+            const messagesContainer = document.getElementById('chatMessages');
+            if (!messagesContainer) return;
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message message-assistant';
+            messageDiv.id = 'imagePreviewMessage'; // 添加ID以便后续更新
+
+            let imagesHtml = images.map((img, index) => `
+                <div style="position: relative; display: inline-block; margin: 4px;">
+                    <img src="${img.base64}"
+                         style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 2px solid #007aff; display: block;"
+                         title="${img.name || '图片 ' + (index + 1)}">
+                    <button onclick="removeUploadedImage(${index})"
+                            style="position: absolute; top: -6px; right: -6px; width: 20px; height: 20px; border-radius: 50%; background: #ef4444; color: white; border: 2px solid white; cursor: pointer; font-size: 12px; line-height: 1; padding: 0; display: flex; align-items: center; justify-content: center;"
+                            title="删除此图片">×</button>
+                </div>
+            `).join('');
+
+            const html = `
+                <div class="message-text" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                    <span style="color: var(--text-tertiary); font-size: 0.9em;">
+                        <i class="fas fa-camera" style="margin-right: 4px;"></i>
+                        已加载 ${images.length} 张参考图：
+                    </span>
+                    ${imagesHtml}
+                </div>
+            `;
+            messageDiv.innerHTML = html;
+
+            // 移除旧的预览消息（如果存在）
+            const oldPreview = document.getElementById('imagePreviewMessage');
+            if (oldPreview) {
+                oldPreview.remove();
+                // 同时从对话历史中移除
+                conversationHistory = conversationHistory.filter(msg => msg.type !== 'image-preview');
+            }
+
+            messagesContainer.appendChild(messageDiv);
+
+            // 保存到对话历史
+            conversationHistory.push({
+                type: 'image-preview',
+                html: messageDiv.outerHTML
+            });
+
+            scrollToBottom();
+        }
+
+        // 删除已上传的图片
+        function removeUploadedImage(index) {
+            if (index >= 0 && index < uploadedImages.length) {
+                uploadedImages.splice(index, 1);
+
+                // 如果还有图片，重新显示预览
+                if (uploadedImages.length > 0) {
+                    addImagePreviewMessage(uploadedImages);
+                    uploadedImage = uploadedImages[0].base64; // 更新主图片
+                } else {
+                    // 如果没有图片了，移除预览消息
+                    const previewMsg = document.getElementById('imagePreviewMessage');
+                    if (previewMsg) {
+                        previewMsg.remove();
+                        conversationHistory = conversationHistory.filter(msg => msg.type !== 'image-preview');
+                    }
+                    uploadedImage = null;
+                }
+            }
+        }
+
+        // 添加错误消息并显示重试按钮
+        function addErrorMessageWithRetry(errorMessage) {
+            const messagesContainer = document.getElementById('chatMessages');
+            if (!messagesContainer) {
+                alert('生成失败: ' + errorMessage);
+                return;
+            }
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message message-assistant';
+            const html = `
+                <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 16px;">
+                    <div style="color: var(--danger); font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 1.2em;"></i>
+                        <span>生成失败</span>
+                    </div>
+                    <div style="color: var(--text-secondary); font-size: 0.9em; margin-bottom: 12px;">
+                        ${escapeHtml(errorMessage)}
+                    </div>
+                    <button class="btn btn-primary" onclick="retryLastRequest()" style="width: auto; padding: 10px 20px;">
+                        <i class="fas fa-redo" style="margin-right: 4px;"></i> 重试
+                    </button>
+                </div>
+            `;
+            messageDiv.innerHTML = html;
+            messagesContainer.appendChild(messageDiv);
+
+            // 保存到对话历史
+            conversationHistory.push({
+                type: 'error',
+                html: messageDiv.outerHTML
+            });
+
+            scrollToBottom();
+        }
+
+        function addLoadingMessage() {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            const id = 'loading-' + Date.now();
+            messageDiv.id = id;
+            messageDiv.className = 'message message-assistant';
+            messageDiv.innerHTML = `
+                <div class="loading">
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                </div>
+            `;
+            messagesContainer.appendChild(messageDiv);
+            scrollToBottom();
+            return id;
+        }
+
+        function removeMessage(id) {
+            const element = document.getElementById(id);
+            if (element) element.remove();
+        }
+
+        function scrollToBottom() {
+            const container = document.getElementById('chatContainer');
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // 工具函数
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function viewImage(url) {
+            window.open(url, '_blank');
+        }
+
+        function downloadImage(url) {
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `AI-Generated-${Date.now()}.png`;
+            link.click();
+        }
+
+        function continueEdit(url) {
+            uploadedImage = url;
+            // 添加到 uploadedImages 数组以支持缩略图显示
+            uploadedImages = [{
+                base64: url,
+                name: '历史图片'
+            }];
+            // 显示缩略图预览
+            addImagePreviewMessage(uploadedImages);
+            document.getElementById('promptInput').focus();
+        }
+
+        // 编辑提示词（带图片）
+        function editPromptWithImages(messageId) {
+            // 从对话历史中找到对应的消息
+            const messageData = conversationHistory.find(msg => msg.messageId === messageId);
+
+            if (!messageData) {
+                console.error('未找到消息数据');
+                return;
+            }
+
+            const text = messageData.text || '';
+            const images = messageData.images || [];
+
+            // 将提示词放回输入框
+            const promptInput = document.getElementById('promptInput');
+            promptInput.value = text;
+
+            // 恢复图片（保持当时使用的参考图）
+            if (images.length > 0) {
+                uploadedImages = [...images];
+                uploadedImage = images[0].base64;
+                // 显示图片预览
+                addImagePreviewMessage(uploadedImages);
+            } else {
+                // 如果没有图片，清空
+                uploadedImages = [];
+                uploadedImage = null;
+            }
+
+            // 自动调整输入框高度
+            promptInput.style.height = 'auto';
+            promptInput.style.height = Math.min(promptInput.scrollHeight, 200) + 'px';
+
+            // 滚动到输入框并聚焦
+            promptInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            promptInput.focus();
+
+            // 将光标移到文本末尾
+            promptInput.setSelectionRange(text.length, text.length);
+        }
+
+        // 加载历史记录
+        async function loadHistory() {
+            if (!db) {
+                console.warn('数据库未初始化');
+                return;
+            }
+
+            return new Promise((resolve, reject) => {
+                const transaction = db.transaction([STORE_NAME], 'readonly');
+                const objectStore = transaction.objectStore(STORE_NAME);
+                const index = objectStore.index('timestamp');
+                const request = index.openCursor(null, 'prev');
+
+                imageHistory = [];
+
+                request.onsuccess = (event) => {
+                    const cursor = event.target.result;
+                    if (cursor && imageHistory.length < 50) {
+                        imageHistory.push(cursor.value);
+                        cursor.continue();
+                    } else {
+                        console.log('加载历史记录成功，共', imageHistory.length, '条');
+                        resolve();
+                    }
+                };
+
+                request.onerror = () => {
+                    console.error('加载历史记录失败:', request.error);
+                    reject(request.error);
+                };
+            });
+        }
+
+        // 保存到历史记录
+        async function saveToHistory(imageUrl, prompt, dimensions) {
+            if (!db) return;
+
+            const historyItem = {
+                url: imageUrl,
+                prompt: prompt,
+                dimensions: dimensions,
+                timestamp: new Date().toISOString()
+            };
+
+            return new Promise((resolve, reject) => {
+                const transaction = db.transaction([STORE_NAME], 'readwrite');
+                const objectStore = transaction.objectStore(STORE_NAME);
+                const request = objectStore.add(historyItem);
+
+                request.onsuccess = () => {
+                    imageHistory.unshift(historyItem);
+                    if (imageHistory.length > 50) {
+                        imageHistory = imageHistory.slice(0, 50);
+                    }
+                    resolve();
+                };
+
+                request.onerror = () => {
+                    console.error('保存历史记录失败:', request.error);
+                    reject(request.error);
+                };
+            });
+        }
+
+        // 清空历史记录
+        async function clearHistory() {
+            if (!confirm('确定要清空所有历史记录吗？')) return;
+            if (!db) return;
+
+            const transaction = db.transaction([STORE_NAME], 'readwrite');
+            const objectStore = transaction.objectStore(STORE_NAME);
+            const request = objectStore.clear();
+
+            request.onsuccess = () => {
+                imageHistory = [];
+                addSystemMessage('<i class="fas fa-check-circle" style="color: var(--success); margin-right: 4px;"></i> 历史记录已清空');
+            };
+        }
+
+        // ========== 对话管理功能 ==========
+
+        // 加载所有对话
+        async function loadConversations() {
+            if (!db) return;
+
+            return new Promise((resolve, reject) => {
+                const transaction = db.transaction([CONVERSATION_STORE], 'readonly');
+                const objectStore = transaction.objectStore(CONVERSATION_STORE);
+                const index = objectStore.index('lastUpdated');
+                const request = index.openCursor(null, 'prev');
+
+                conversations = [];
+
+                request.onsuccess = (event) => {
+                    const cursor = event.target.result;
+                    if (cursor) {
+                        conversations.push(cursor.value);
+                        cursor.continue();
+                    } else {
+                        console.log('加载对话列表成功，共', conversations.length, '条');
+                        updateConversationList();
+                        resolve();
+                    }
+                };
+
+                request.onerror = () => {
+                    console.error('加载对话列表失败:', request.error);
+                    reject(request.error);
+                };
+            });
+        }
+
+        // 创建新对话或加载最近的对话
+        async function createOrLoadConversation() {
+            // 优先读取上次的对话ID
+            const lastConversationId = localStorage.getItem('currentConversationId');
+
+            if (lastConversationId && conversations.find(c => c.id === parseInt(lastConversationId))) {
+                // 加载上次的对话
+                await loadConversation(parseInt(lastConversationId));
+            } else if (conversations.length > 0) {
+                // 加载最近的对话
+                await loadConversation(conversations[0].id);
+            } else {
+                // 创建第一个对话
+                await createNewConversation();
+            }
+        }
+
+        // 创建新对话
+        async function createNewConversation() {
+            if (!db) {
+                console.error('数据库未初始化，无法创建新对话');
+                alert('数据库未初始化，请刷新页面重试');
+                return;
+            }
+
+            // 先保存当前对话（如果有）
+            if (currentConversationId && conversationHistory.length > 0) {
+                await saveCurrentConversation();
+            }
+
+            const newConversation = {
+                title: '新对话',
+                messages: [],
+                timestamp: new Date().toISOString(),
+                lastUpdated: new Date().toISOString()
+            };
+
+            return new Promise((resolve, reject) => {
+                try {
+                    const transaction = db.transaction([CONVERSATION_STORE], 'readwrite');
+                    const objectStore = transaction.objectStore(CONVERSATION_STORE);
+                    const request = objectStore.add(newConversation);
+
+                    request.onsuccess = () => {
+                        const newId = request.result;
+                        newConversation.id = newId;
+                        conversations.unshift(newConversation);
+                        currentConversationId = newId;
+                        conversationHistory = [];
+
+                        // 保存到localStorage
+                        localStorage.setItem('currentConversationId', newId);
+
+                        // 清空当前对话界面
+                        displayChatView();
+                        updateConversationList();
+
+                        // 在移动端关闭侧边栏
+                        if (window.innerWidth <= 768) {
+                            closeSidebar();
+                        }
+
+                        resolve(newId);
+                    };
+
+                    request.onerror = () => {
+                        console.error('创建新对话失败:', request.error);
+                        reject(request.error);
+                    };
+                } catch (error) {
+                    console.error('创建新对话异常:', error);
+                    reject(error);
+                }
+            });
+        }
+
+        // 加载指定对话
+        async function loadConversation(conversationId) {
+            if (!db) return;
+
+            // 先保存当前对话
+            if (currentConversationId && conversationHistory.length > 0) {
+                await saveCurrentConversation();
+            }
+
+            return new Promise((resolve, reject) => {
+                const transaction = db.transaction([CONVERSATION_STORE], 'readonly');
+                const objectStore = transaction.objectStore(CONVERSATION_STORE);
+                const request = objectStore.get(conversationId);
+
+                request.onsuccess = () => {
+                    const conversation = request.result;
+                    if (conversation) {
+                        currentConversationId = conversationId;
+                        conversationHistory = conversation.messages || [];
+
+                        // 保存到localStorage
+                        localStorage.setItem('currentConversationId', conversationId);
+
+                        // 切换到聊天视图并显示对话
+                        if (currentView !== 'chat') {
+                            switchView('chat');
+                        } else {
+                            // 强制刷新聊天界面
+                            displayChatView();
+                            // 滚动到底部
+                            setTimeout(() => {
+                                const chatContainer = document.getElementById('chatContainer');
+                                if (chatContainer) {
+                                    chatContainer.scrollTop = chatContainer.scrollHeight;
+                                }
+                            }, 100);
+                            // 即使当前已经是聊天视图，在移动端也要关闭侧边栏
+                            if (window.innerWidth <= 768) {
+                                closeSidebar();
+                            }
+                        }
+
+                        updateConversationList();
+                        console.log('加载对话成功，ID:', conversationId);
+                        resolve();
+                    } else {
+                        reject(new Error('对话不存在'));
+                    }
+                };
+
+                request.onerror = () => {
+                    console.error('加载对话失败:', request.error);
+                    reject(request.error);
+                };
+            });
+        }
+
+        // 保存当前对话
+        async function saveCurrentConversation(updateUI = true) {
+            if (!db) {
+                console.error('数据库未初始化，无法保存');
+                return;
+            }
+            if (!currentConversationId) {
+                console.error('没有当前对话ID，无法保存');
+                return;
+            }
+            if (conversationHistory.length === 0) {
+                return;
+            }
+
+            // 生成对话标题（使用第一条用户消息）
+            let title = '新对话';
+            const firstUserMsg = conversationHistory.find(msg => msg.type === 'user');
+            if (firstUserMsg) {
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = firstUserMsg.html;
+                const text = tempDiv.textContent || tempDiv.innerText || '';
+                title = text.substring(0, 10) + (text.length > 10 ? '...' : '');
+            }
+
+            return new Promise((resolve, reject) => {
+                try {
+                    const transaction = db.transaction([CONVERSATION_STORE], 'readwrite');
+                    const objectStore = transaction.objectStore(CONVERSATION_STORE);
+                    const request = objectStore.get(currentConversationId);
+
+                    request.onsuccess = () => {
+                        const conversation = request.result;
+                        if (conversation) {
+                            conversation.messages = conversationHistory;
+                            conversation.title = title;
+                            conversation.lastUpdated = new Date().toISOString();
+
+                            const updateRequest = objectStore.put(conversation);
+                            updateRequest.onsuccess = () => {
+                                // 更新本地列表
+                                const index = conversations.findIndex(c => c.id === currentConversationId);
+                                if (index !== -1) {
+                                    conversations[index] = conversation;
+                                    // 移到最前面
+                                    conversations.splice(index, 1);
+                                    conversations.unshift(conversation);
+                                }
+
+                                // 只在需要时更新UI
+                                if (updateUI) {
+                                    updateConversationList();
+                                }
+                                resolve();
+                            };
+
+                            updateRequest.onerror = () => {
+                                console.error('保存对话失败:', updateRequest.error);
+                                reject(updateRequest.error);
+                            };
+                        } else {
+                            // 对话不存在（可能已被删除），跳过保存
+                            console.warn('对话不存在，跳过保存');
+                            resolve();
+                        }
+                    };
+
+                    request.onerror = () => {
+                        console.error('获取对话失败:', request.error);
+                        reject(request.error);
+                    };
+                } catch (error) {
+                    console.error('保存对话异常:', error);
+                    reject(error);
+                }
+            });
+        }
+
+        // 删除对话
+        async function deleteConversation(conversationId) {
+            if (!db) return;
+            if (!confirm('确定要删除这个对话吗？')) return;
+
+            return new Promise((resolve, reject) => {
+                const transaction = db.transaction([CONVERSATION_STORE], 'readwrite');
+                const objectStore = transaction.objectStore(CONVERSATION_STORE);
+                const request = objectStore.delete(conversationId);
+
+                request.onsuccess = async () => {
+                    // 从列表中移除
+                    conversations = conversations.filter(c => c.id !== conversationId);
+
+                    // 如果删除的是当前对话
+                    if (currentConversationId === conversationId) {
+                        // 清除localStorage和当前对话数据
+                        localStorage.removeItem('currentConversationId');
+                        currentConversationId = null;
+                        conversationHistory = [];
+
+                        // 立即清空聊天界面
+                        const chatContainer = document.getElementById('chatContainer');
+                        if (chatContainer) {
+                            chatContainer.innerHTML = '<div class="chat-messages" id="chatMessages"></div>';
+                        }
+
+                        // 如果还有其他对话，切换到第一个
+                        if (conversations.length > 0) {
+                            await loadConversation(conversations[0].id);
+                        } else {
+                            // 没有其他对话了，创建新对话
+                            await createNewConversation();
+                        }
+                    } else {
+                        // 删除的不是当前对话，只需更新UI
+                        updateConversationList();
+
+                        // 如果当前在历史记录视图，刷新显示
+                        if (currentView === 'history') {
+                            displayHistoryView();
+                        }
+                    }
+
+                    resolve();
+                };
+
+                request.onerror = () => {
+                    console.error('删除对话失败:', request.error);
+                    reject(request.error);
+                };
+            });
+        }
+
+        // 更新侧边栏对话列表
+        function updateConversationList() {
+            const container = document.querySelector('.sidebar-section');
+            if (!container) return;
+
+            // 查找或创建对话列表区域
+            let convSection = document.getElementById('conversationListSection');
+            if (!convSection) {
+                convSection = document.createElement('div');
+                convSection.id = 'conversationListSection';
+                convSection.className = 'sidebar-section';
+                convSection.style.flex = '1';
+                convSection.style.overflowY = 'auto';
+                convSection.style.minHeight = '0';
+                convSection.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 12px; margin-bottom: 8px;">
+                        <div class="sidebar-section-title" style="margin: 0;">对话列表</div>
+                        <button onclick="createNewConversation()" style="background: var(--accent-primary); color: white; border: none; border-radius: 6px; padding: 4px 8px; font-size: 0.85em; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='var(--accent-hover)'" onmouseout="this.style.background='var(--accent-primary)'" title="新建对话">
+                            <i class="fas fa-plus" style="margin-right: 2px;"></i> 新建
+                        </button>
+                    </div>
+                    <div id="conversationList" style="overflow-y: auto;"></div>
+                `;
+                // 插入到第一个 sidebar-section 后面
+                const firstSection = document.querySelector('.sidebar-section');
+                if (firstSection && firstSection.nextSibling) {
+                    firstSection.parentNode.insertBefore(convSection, firstSection.nextSibling);
+                }
+            }
+
+            const listContainer = document.getElementById('conversationList');
+            if (!listContainer) return;
+
+            // 生成对话列表
+            listContainer.innerHTML = conversations.slice(0, 20).map(conv => {
+                const isActive = conv.id === currentConversationId;
+                const date = new Date(conv.lastUpdated);
+                const timeStr = date.toLocaleString('zh-CN', {
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+
+                return `
+                    <div class="sidebar-item ${isActive ? 'active' : ''}"
+                         onclick="loadConversation(${conv.id})"
+                         style="display: flex; justify-content: space-between; align-items: center; position: relative; padding-right: 36px;">
+                        <div style="flex: 1; overflow: hidden;">
+                            <div style="font-size: 0.9em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                ${escapeHtml(conv.title || '新对话')}
+                            </div>
+                            <div style="font-size: 0.75em; color: var(--text-tertiary); margin-top: 2px;">
+                                ${timeStr}
+                            </div>
+                        </div>
+                        <button onclick="event.stopPropagation(); deleteConversation(${conv.id})"
+                                style="position: absolute; right: 8px; background: transparent; border: none; color: var(--text-tertiary); cursor: pointer; padding: 4px; border-radius: 4px; font-size: 0.9em; display: flex; align-items: center; justify-content: center;"
+                                onmouseover="this.style.background='var(--bg-hover)'; this.style.color='var(--danger)';"
+                                onmouseout="this.style.background='transparent'; this.style.color='var(--text-tertiary)';"
+                                title="删除对话">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // 视图切换
+        function switchView(view) {
+            currentView = view;
+            const chatContainer = document.getElementById('chatContainer');
+
+            // 更新侧边栏激活状态
+            document.querySelectorAll('.sidebar-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            // 使用 event 对象（如果存在且有 target 属性）
+            if (typeof event !== 'undefined' && event && event.target && typeof event.target.closest === 'function') {
+                try {
+                    const sidebarItem = event.target.closest('.sidebar-item');
+                    if (sidebarItem) {
+                        sidebarItem.classList.add('active');
+                    }
+                } catch (e) {
+                    // 忽略错误，继续执行
+                }
+            }
+
+            // 根据视图显示不同内容
+            if (view === 'history') {
+                displayHistoryView();
+            } else {
+                displayChatView();
+            }
+
+            // 移动端关闭侧边栏
+            if (window.innerWidth <= 768) {
+                closeSidebar();
+            }
+        }
+
+        // 显示聊天视图
+        function displayChatView() {
+            const chatContainer = document.getElementById('chatContainer');
+
+            // 如果已经有对话历史，恢复它
+            if (conversationHistory.length > 0) {
+                chatContainer.innerHTML = '<div class="chat-messages" id="chatMessages"></div>';
+                const messagesContainer = document.getElementById('chatMessages');
+
+                // 恢复所有历史消息
+                conversationHistory.forEach(msg => {
+                    const messageDiv = document.createElement('div');
+                    messageDiv.innerHTML = msg.html;
+                    messagesContainer.appendChild(messageDiv.firstElementChild);
+                });
+            } else {
+                // 首次进入，显示欢迎消息
+                chatContainer.innerHTML = `
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message message-assistant">
+                            <div class="message-text">
+                                <i class="fas fa-robot" style="margin-right: 6px; color: var(--accent-primary);"></i>
+                                你好！我是 AI 图片生成助手。<br>
+                                请描述你想要生成的图片，或上传参考图片进行编辑。
+                            </div>
+                        </div>
+                    `;
+            }
+        }
+
+        // 显示历史记录视图（显示所有对话）
+        function displayHistoryView() {
+            const chatContainer = document.getElementById('chatContainer');
+
+            if (conversations.length === 0) {
+                chatContainer.innerHTML = `
+                    <div style="text-align: center; padding: 60px 20px; color: var(--text-tertiary);">
+                        <i class="fas fa-history" style="font-size: 3em; margin-bottom: 16px; color: var(--accent-primary);"></i>
+                        <div style="font-size: 1.1em; margin-bottom: 8px; color: var(--text-secondary);">暂无历史对话</div>
+                        <div style="font-size: 0.9em;">开始新对话后会自动保存在这里</div>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = `
+                <div style="max-width: 1200px; margin: 0 auto; padding: 16px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+                        <h2 style="font-size: clamp(1.2em, 4vw, 1.5em); font-weight: 600; color: var(--text-primary); margin: 0;">历史对话 (${conversations.length})</h2>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+            `;
+
+            conversations.forEach((conv, index) => {
+                const date = new Date(conv.lastUpdated);
+                const timeStr = date.toLocaleString('zh-CN', {
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+
+                // 统计对话中的消息数量
+                const messageCount = conv.messages ? conv.messages.length : 0;
+                const userMessages = conv.messages ? conv.messages.filter(m => m.type === 'user').length : 0;
+                const assistantMessages = conv.messages ? conv.messages.filter(m => m.type === 'assistant').length : 0;
+
+                // 获取第一张图片作为预览
+                let previewImage = '';
+                if (conv.messages) {
+                    const imgMsg = conv.messages.find(m => m.type === 'assistant' && m.imageUrl);
+                    if (imgMsg && imgMsg.imageUrl) {
+                        previewImage = `
+                            <div style="flex-shrink: 0; display: none;" class="history-preview-img">
+                                <img src="${imgMsg.imageUrl}"
+                                     style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; cursor: pointer;"
+                                     onclick="event.stopPropagation(); viewImageInModal('${imgMsg.imageUrl}')">
+                            </div>
+                        `;
+                    }
+                }
+
+                html += `
+                    <div style="background: var(--bg-secondary); border-radius: 12px; padding: 12px; border: 1px solid var(--border-color); transition: all 0.2s; cursor: pointer;"
+                         onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.3)'; this.style.borderColor='var(--accent-primary)'"
+                         onmouseout="this.style.boxShadow='none'; this.style.borderColor='var(--border-color)'"
+                         onclick="loadConversation(${conv.id})">
+                        <div style="display: flex; gap: 12px; align-items: start; flex-wrap: wrap;">
+                            ${previewImage}
+                            <div style="flex: 1; min-width: 0;">
+                                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 6px; gap: 8px;">
+                                    <h3 style="font-size: 1.1em; font-weight: 600; color: var(--text-primary); margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0;">
+                                        ${escapeHtml(conv.title || '新对话')}
+                                    </h3>
+                                    <button onclick="event.stopPropagation(); deleteConversation(${conv.id})"
+                                            style="background: transparent; border: none; color: var(--text-tertiary); cursor: pointer; padding: 4px 8px; border-radius: 4px; font-size: 1em; flex-shrink: 0; display: flex; align-items: center; justify-content: center;"
+                                            onmouseover="this.style.background='var(--bg-hover)'; this.style.color='var(--danger)';"
+                                            onmouseout="this.style.background='transparent'; this.style.color='var(--text-tertiary)';"
+                                            title="删除对话">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                                <div style="font-size: 0.85em; color: var(--text-tertiary); margin-bottom: 8px;">
+                                    ${timeStr} · ${messageCount} 条消息 (${userMessages} 个提问, ${assistantMessages} 个回复)
+                                </div>
+                                <div style="font-size: 0.9em; color: var(--text-secondary); line-height: 1.4;">
+                                    点击查看完整对话
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += `</div></div>`;
+            chatContainer.innerHTML = html;
+        }
+
+        // 侧边栏切换
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            sidebar.classList.toggle('open');
+            overlay.classList.toggle('active');
+        }
+
+        function closeSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            sidebar.classList.remove('open');
+            overlay.classList.remove('active');
+        }
+
+        // 空白图片生成功能
+        function showBlankImageModal() {
+            document.getElementById('blankImageModal').classList.add('active');
+            // 默认选中第一个选项
+            const firstRatio = document.querySelector('.ratio-option[data-ratio="9:16"]');
+            const firstColor = document.querySelector('.color-option[data-color="#FFFFFF"]');
+            if (firstRatio) firstRatio.classList.add('active');
+            if (firstColor) firstColor.classList.add('active');
+        }
+
+        function closeBlankImageModal() {
+            document.getElementById('blankImageModal').classList.remove('active');
+        }
+
+        function selectBlankRatio(ratio, element) {
+            selectedBlankRatio = ratio;
+            document.querySelectorAll('.ratio-option').forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        function selectBlankColor(color, element) {
+            selectedBlankColor = color;
+            document.querySelectorAll('.color-option').forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        function generateBlankImage() {
+            const ratioMap = {
+                '9:16': { width: 768, height: 1365 },
+                '16:9': { width: 1344, height: 768 },
+                '1:1': { width: 1024, height: 1024 },
+                '4:3': { width: 1344, height: 1008 }
+            };
+
+            const size = ratioMap[selectedBlankRatio];
+            const canvas = document.createElement('canvas');
+            canvas.width = size.width;
+            canvas.height = size.height;
+
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = selectedBlankColor;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            const blankImageBase64 = canvas.toDataURL('image/jpeg', 0.9);
+            uploadedImage = blankImageBase64;
+            uploadedImages.push({
+                base64: blankImageBase64,
+                name: `空白图-${selectedBlankRatio}.jpg`
+            });
+
+            closeBlankImageModal();
+
+            // 切换到聊天视图并提示
+            if (currentView !== 'chat') {
+                switchView('chat');
+            }
+            setTimeout(() => {
+                addSystemMessage(`已生成 ${selectedBlankRatio} 比例的空白图片 (${size.width}x${size.height})，请输入提示词`);
+                document.getElementById('promptInput').focus();
+            }, 100);
+        }
+
+        // 多图上传处理
+        // 压缩图片（智能选择最小尺寸）
+        function compressImage(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const originalDataUrl = e.target.result;
+                    const originalSize = originalDataUrl.length;
+
+                    const img = new Image();
+                    img.onload = function() {
+                        // 创建canvas
+                        const canvas = document.createElement('canvas');
+                        const ctx = canvas.getContext('2d');
+
+                        // 保持原始分辨率
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+
+                        // 绘制图片
+                        ctx.drawImage(img, 0, 0, img.width, img.height);
+
+                        // 尝试不同的压缩方案，选择最小的
+                        const candidates = [];
+
+                        // 方案1: JPEG 90%
+                        candidates.push({
+                            data: canvas.toDataURL('image/jpeg', 0.9),
+                            format: 'JPEG 90%'
+                        });
+
+                        // 方案2: JPEG 80%
+                        candidates.push({
+                            data: canvas.toDataURL('image/jpeg', 0.8),
+                            format: 'JPEG 80%'
+                        });
+
+                        // 方案3: JPEG 70%
+                        candidates.push({
+                            data: canvas.toDataURL('image/jpeg', 0.7),
+                            format: 'JPEG 70%'
+                        });
+
+                        // 方案4: PNG（如果原图是PNG）
+                        if (file.type === 'image/png') {
+                            candidates.push({
+                                data: canvas.toDataURL('image/png'),
+                                format: 'PNG'
+                            });
+                        }
+
+                        // 方案5: 原图
+                        candidates.push({
+                            data: originalDataUrl,
+                            format: '原图'
+                        });
+
+                        // 选择最小的
+                        let bestCandidate = candidates[0];
+                        for (const candidate of candidates) {
+                            if (candidate.data.length < bestCandidate.data.length) {
+                                bestCandidate = candidate;
+                            }
+                        }
+
+                        const compressedSize = bestCandidate.data.length;
+
+                        resolve({
+                            base64: bestCandidate.data,
+                            name: file.name,
+                            originalSize,
+                            compressedSize,
+                            format: bestCandidate.format
+                        });
+                    };
+                    img.onerror = reject;
+                    img.src = originalDataUrl;
+                };
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function handleImageUpload(event) {
+            const files = event.target.files;
+            if (!files || files.length === 0) return;
+
+            let loadedCount = 0;
+            const totalFiles = files.length;
+
+            // 显示加载提示
+            addSystemMessage('<i class="fas fa-spinner fa-spin" style="margin-right: 4px;"></i> 正在优化图片...');
+
+            Array.from(files).forEach((file, index) => {
+                // 智能压缩图片
+                compressImage(file).then(result => {
+                    uploadedImages.push({
+                        base64: result.base64,
+                        name: result.name
+                    });
+                    uploadedImage = result.base64; // 保持兼容性
+
+                    loadedCount++;
+                    if (loadedCount === totalFiles) {
+                        if (currentView !== 'chat') {
+                            switchView('chat');
+                        }
+                        setTimeout(() => {
+                            // 显示图片缩略图
+                            addImagePreviewMessage(uploadedImages);
+                            document.getElementById('promptInput').focus();
+                        }, 100);
+                    }
+                }).catch(error => {
+                    console.error('图片处理失败:', error);
+                    // 如果处理失败，使用原图
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        uploadedImages.push({
+                            base64: e.target.result,
+                            name: file.name
+                        });
+                        uploadedImage = e.target.result;
+
+                        loadedCount++;
+                        if (loadedCount === totalFiles) {
+                            if (currentView !== 'chat') {
+                                switchView('chat');
+                            }
+                            setTimeout(() => {
+                                addImagePreviewMessage(uploadedImages);
+                                document.getElementById('promptInput').focus();
+                            }, 100);
+                        }
+                    };
+                    reader.readAsDataURL(file);
+                });
+            });
+        }
+        // 图片查看器函数
+        function viewImageInModal(url) {
+            const modal = document.getElementById('imageViewerModal');
+            const img = document.getElementById('imageViewerImg');
+            img.src = url;
+            modal.classList.add('active');
+        }
+
+        function closeImageViewer() {
+            const modal = document.getElementById('imageViewerModal');
+            modal.classList.remove('active');
+        }
+
+        // 点击模态框背景关闭
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('imageViewerModal');
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        closeImageViewer();
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- 图片查看器模态框 -->
+    <div class="image-viewer-modal" id="imageViewerModal">
+        <div class="image-viewer-content">
+            <button class="image-viewer-close" onclick="closeImageViewer()">×</button>
+            <img id="imageViewerImg" src="" alt="查看图片">
+        </div>
+    </div>
+</body>
+</html>
