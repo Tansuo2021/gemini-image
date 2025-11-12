@@ -58,7 +58,7 @@ npx serve          # npm i -g serve
 
 | 字段 | 示例值 |
 |---|---|
-| API 地址 | `https://privnode.com/v1/chat/completions` |
+| API 地址 | `https://api请求网站/v1/chat/completions` |
 | 模型名 | `gemini-2.5-flash-image` |
 | 返回格式 | 流式 SSE，含 `data: {"choices":[{"delta":{"content":"data:image/png;base64,..."}}]}` |
 
@@ -132,7 +132,6 @@ MIT © 2025 YourName
 ## 🙏 致谢
 
 - SVG 图标：[Font Awesome](https://fontawesome.com)  
-- 默认 API 代理：[PrivNode](https://privnode.com)  
 - 灵感来源：Midjourney、DALL·E、Stable Diffusion WebUI
 
 ---
