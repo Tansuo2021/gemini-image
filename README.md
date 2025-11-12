@@ -1,4 +1,9 @@
 <img width="2996" height="1496" alt="image" src="https://github.com/user-attachments/assets/a69d9d0b-86a2-436b-86d3-6c82c9f77e04" />
+<img width="3796" height="1700" alt="image" src="https://github.com/user-attachments/assets/de248677-adf8-4f60-b325-e42420164769" />
+<img width="3796" height="1700" alt="image" src="https://github.com/user-attachments/assets/73a20770-27f1-45f2-8476-581840251408" />
+<img width="3796" height="1700" alt="image" src="https://github.com/user-attachments/assets/c5efe2b3-7458-4fe4-a7db-838ab79fc283" />
+
+# 核心功能：文生图 改图 重新生图 生成不同比例图片 满足第三方的openai的格式生成，兼容newapi
 # 🎨 AI 图片生成器（纯前端版）
 
 > 在浏览器里就能跑的全功能 AI 文生图 / 图生图工作台  
